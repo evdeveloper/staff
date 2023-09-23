@@ -5,16 +5,13 @@
 
   const value = ref('');
   const textareaMaxCounter = 250;
-
   function textareaCounter() {
-    if (this.value.length >= textareaMaxCounter) {
-      this.value = this.value.substring(0,textareaMaxCounter);
+    if (value.value.length >= textareaMaxCounter) {
+      value.value = value.value.substring(0,textareaMaxCounter);
     }
   }
-
-  const sendForm = () => {
-    alert('Форма отправлена');
-  }
+  const sendForm = () => alert('Форма отправлена');
+  
 </script>
 
 <template>
