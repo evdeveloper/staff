@@ -1,0 +1,74 @@
+@import '../node_modules/normalize.scss/normalize.scss';
+@import '../src/assets/styles/components/vars.scss';
+
+
+html {
+  font-size: var(--base-font-size);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  background-color: var(--white);
+  font-family: var(--base-font-family);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+sup { vertical-align: top; }
+a { text-decoration: none; }
+p { margin: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { 
+  resize: none;
+  padding: 0;
+  border: none;
+  &:focus-visible { outline: none; }
+}
+
+section { position: relative; }
+
+input,
+select,
+button {
+  font-family: var(--base-font-family);
+  outline: none; 
+  border: none; 
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent; 
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
