@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="v-navigation">
     <a href="#" class="v-navigation__link active">Основная информация</a>
@@ -10,10 +14,6 @@
     <a href="#" class="v-navigation__link">Дополнительные данные</a>
   </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style lang='scss' scoped>
   .v-navigation {
